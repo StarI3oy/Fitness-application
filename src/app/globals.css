@@ -28,6 +28,32 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.lavshyak-super-header{
+  letter-spacing: 9px;
+  font-size: 23px;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #08776b;
+}
+@font-face {
+  font-family: "MyIron";
+  src: url('fonts/Iron.ttf') format('truetype');
+}
+.lavshyak-super-fitness{
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-family: "MyIron", serif;
+  color: #374479;
+  line-height: normal;
+}
+.lavshyak-super-describe{
+  font-size: 23px;
+  font-family: serif;
+  color: #3e3833;
+  text-decoration: underline;
+  line-height: normal;
+}
 
 .lavshyak-box{
   border: solid 1px var(--colorBorder-lavshyak);
