@@ -38,7 +38,7 @@ body {
 }
 @font-face {
   font-family: "MyIron";
-  src: url('fonts/Iron.ttf') format('truetype');
+  src: url('../../public/fonts/Iron.ttf') format('truetype');
 }
 .lavshyak-super-fitness{
   font-size: 35px;
