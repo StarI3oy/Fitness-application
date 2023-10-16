@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import {ReactNode} from "react";
 
 export default function Home() {
     return (
@@ -17,33 +18,83 @@ export default function Home() {
             }
             {
 
-                <div className="lavshyak-box border-2">
-                    <div className="lavshyak-box_header">
+                <div className="lavshyak-box">
+                    <div className="lavshyak-box_header bg-gradient-to-b from-[#0c1125]">
                         Главная страница
                     </div>
 
-
-                    <div className="grid-container-under-main bg-gradient-to-b from-[#0c1125]">
-                        <div className="lavshyak-box_item grid-item">Календарь с графиком тренировок</div>
-                        <div className="lavshyak-box_item grid-item">Динамика веса</div>
-                        <div className="lavshyak-box_item grid-item">Динамика пульса</div>
+                    <div className="lavshyak-box-under-main-first">
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">{CalendarWithTrainingSchedule()}</div>
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">{WeightDynamics()}</div>
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">{HeartRateDynamics()}</div>
                     </div>
 
-                    <div className={"grid-container-under-under-main bg-gradient-to-b from-[#0c1125]"}>
-                        <div className="lavshyak-box_item grid-item">
-                            {
-                                // TODO: надо сделать както чтоб Физические данные: были как Главная страница
-                            }
-                            <div className={"lavshyak-box_header"}>Физические данные:</div>
-                            <div className={"lavshyak-box_item"}>items</div>
+                    <div className={"lavshyak-box-under-main-second"}>
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">
+                            <div className={"lavshyak-box_header"}>Физические данные</div>
+                            <div className={"lavshyak-list"}>
+                                {PhysicsDataList()}
+                            </div>
                         </div>
-                        <div className="lavshyak-box_item grid-item">Динамика веса</div>
-                        <div className="lavshyak-box_item grid-item">Динамика пульса</div>
-                        <div className="lavshyak-box_item grid-item">Поле переписки с тренером</div>
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">
+                            <div className="lavshyak-box_header">Диета</div>
+                            <div className={"lavshyak-list"}>
+                                {DietList()}
+                            </div>
+                        </div>
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">
+                            <div className="lavshyak-box_header">Рекомендации советника</div>
+                            <div className={"lavshyak-list"}>
+                                {RecommendationsFromAdvisorList()}
+                            </div>
+                        </div>
+
+                        <div className="lavshyak-box_item bg-gradient-to-b from-[#0c1125]">
+                            {FieldOfCorrespondenceWithTheCoach()}
+                        </div>
                     </div>
 
                 </div>
             }
         </main>
     )
+}
+
+function PhysicsDataList() {
+    return TemplateList();
+}
+
+function DietList() {
+    return TemplateList();
+}
+
+function RecommendationsFromAdvisorList() {
+    return TemplateList();
+}
+
+export function TemplateList() {
+    return (
+        <div>
+            <div>item1</div>
+            <div>item2</div>
+        </div>
+    );
+}
+
+function FieldOfCorrespondenceWithTheCoach() {
+    return (<div className={"text-center"}>Поле переписки с тренером</div>)
+}
+
+function CalendarWithTrainingSchedule() {
+    return (<div>Календарь с графиком тренировок</div>)
+}
+
+function WeightDynamics()
+{
+    return (<div>Динамика веса</div>)
+}
+
+function HeartRateDynamics()
+{
+    return (<div>Динамика пульса</div>)
 }
