@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --colorBorder-lavshyak: #675ba7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,75 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.lavshyak-super-header{
+  letter-spacing: 9px;
+  font-size: 23px;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #08776b;
+}
+@font-face {
+  font-family: "MyIron";
+  src: url('../../public/fonts/Iron.ttf') format('truetype');
+}
+.lavshyak-super-fitness{
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-family: "MyIron", serif;
+  color: #374479;
+  line-height: normal;
+}
+.lavshyak-super-describe{
+  font-size: 23px;
+  font-family: serif;
+  color: #3e3833;
+  text-decoration: underline;
+  line-height: normal;
+}
+
+.lavshyak-box{
+  border: solid 1px var(--colorBorder-lavshyak);
+}
+
+.lavshyak-box_header{
+  margin-bottom: 5px;
+  text-align: center;
+  border-bottom: solid 1px var(--colorBorder-lavshyak);
+}
+
+.lavshyak-box_item{
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid 1px var(--colorBorder-lavshyak);
+  font-size: 1.1em;
+}
+
+.lavshyak-box-under-main-first {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lavshyak-box-under-main-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lavshyak-list{
+  margin-left: 10px;
+}
+
+.color1 {
+  background-color: #675ba7;
+}
+.color2 {
+  background-color: #9bc850;
+}
+.color3 {
+  background-color: #a62e5c;
+}
+.color4 {
+  background-color: #2a9fbc;
 }
