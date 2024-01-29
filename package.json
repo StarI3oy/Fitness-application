@@ -9,20 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "antd": "^5.9.2",
-    "autoprefixer": "10.4.16",
     "chart.js": "^4.4.0",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "moment": "^2.30.1",
     "next": "13.5.2",
-    "postcss": "8.4.30",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
-  }
+  },
+  "description": "Проект создан с помощью [Next.js](https://nextjs.org/) сгенерирован изначально с помощью [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  },
+  "author": "",
+  "license": "ISC"
 }
