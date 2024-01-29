@@ -16,7 +16,7 @@ import CurrentTime from "@/components/currTime";
 const Page: NextPage = () => {
   const [selectedDate, setSelectedDate] = useState("27-01-2024");
   const filteredData = taskData.find(item => item.id === selectedDate);
-
+//а
   const formattedDate = dayjs(selectedDate, 'DD-MM-YYYY').locale('ru').format('D MMMM, dd');
   dayjs.extend(localizedFormat); 
   dayjs.locale('ru'); 
