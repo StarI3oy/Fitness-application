@@ -1,10 +1,9 @@
 # Fitness-application
 
-Проект создан с помощью [Next.js](https://nextjs.org/) сгенерирован изначально с помощью [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Приложение для проекта в вузе
 
-## Getting Started
 
-Первый шаг для запуска:
+Шаги для запуска:
 
 ```bash
 npm run dev
